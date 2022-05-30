@@ -23,6 +23,6 @@ variable "subnet5_cidr" {
   default = "10.0.5.0/24"
 }
 # Defining CIDR Block for 6th Subnet
-variable "subnet5_cidr" {
+variable "subnet6_cidr" {
   default = "10.0.6.0/24"
 }
