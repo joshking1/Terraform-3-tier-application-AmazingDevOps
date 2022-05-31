@@ -1,5 +1,5 @@
 # Creating 1st EC2 instance in Public Subnet
-resource "aws_instance" "demoinstance" {
+resource "aws_instance" "attachment" {
   ami                         = "ami-087c17d1fe0178315"
   instance_type               = "t2.small"
   count                       = 1
@@ -15,7 +15,7 @@ resource "aws_instance" "demoinstance" {
 }
 
 # Creating 2nd EC2 instance in Public Subnet
-resource "aws_instance" "demoinstance1" {
+resource "aws_instance" "attachment1" {
   ami                         = "ami-087c17d1fe0178315"
   instance_type               = "t2.small"
   count                       = 1
