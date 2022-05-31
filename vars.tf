@@ -26,3 +26,13 @@ variable "subnet5_cidr" {
 variable "subnet6_cidr" {
   default = "10.0.6.0/24"
 }
+
+variable "instance_type" {
+
+}
+variable "instance_ami" {
+
+}
+variable "keyname" {
+  
+}
