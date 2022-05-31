@@ -2,7 +2,7 @@
 resource "aws_security_group" "database-sg" {
   name        = "Database SG"
   description = "Allow inbound traffic from application layer"
-  vpc_id      = "${aws_vpc.development-vpc.id}"
+  vpc_id      = "${aws_vpc.demovpc.id}"
 
   ingress {
     description     = "Allow traffic from application layer"
