@@ -15,8 +15,8 @@ resource "aws_lb_target_group" "target-elb" {
 }
 
 resource "aws_lb_target_group_attachment" "attachment" {
-  target_group_arn = aws_lb_target_group.external-alb.arn
-  target_id        = aws_instance.attachment.id
+  target_group_arn = "${aws_lb_target_group.external-alb.arn}"
+  target_id        = "${aws_instance.attachment.id}"
   port             = 80
 
   depends_on = [
